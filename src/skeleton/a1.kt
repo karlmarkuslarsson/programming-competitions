@@ -1,7 +1,5 @@
 package skeleton
 
-import java.security.acl.Group
-
 private fun readLn() = readLine()!! // string line
 private fun readInt() = readLn().toInt() // single int
 private fun readLong() = readLn().toLong() // single long
@@ -39,10 +37,6 @@ fun main() {
 
 }
 
-private fun giveCandy(toiletPaper: Int, candyLeft: Int, groupIndex: Int, group: List<Group>) {
-
-
-}
 
 private fun printOutput() {
 
