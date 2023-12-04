@@ -57,3 +57,13 @@ fun generateProblemForDay(day: Int) {
     )
     writer.close()
 }
+
+fun <T> MutableMap<Int, MutableMap<Int, T>>.add(x: Int, y: Int, char: T) {
+    val row = get(x) ?: mutableMapOf()
+    row[y] = char
+    put(x, row)
+}
+
+fun <T> MutableMap<Int, MutableMap<Int, T>>.get(x: Int, y: Int): T? {
+    return get(x)?.get(y)
+}
